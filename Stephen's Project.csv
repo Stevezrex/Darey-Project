@@ -1,0 +1,52 @@
+Date,ID,Name,Region,Rating,Product,Quantity,Price Per Unit,Total Value
+31-01-21,1,John Smith   ,North,Good,Magic Wand,10,$20.00 ,$200.00 
+28-02-21,2,Jane Doe,East,Excellent,Unicorn Horn,15,$10.00 ,$150.00 
+31-03-21,3,Mike   Tyson,West,Poor,Boxing Gloves,0,0,$0.00 
+30-04-21,4,Anna   Belle,South,Average,Fairy Dust,25,$10.00 ,$250.00 
+31-05-21,5,Chris P. Bacon,East,Good,Bacon Scented Candle,30,$16.67 ,$500.10 
+30-06-21,6,Peter   Parker,TBA,Excellent,Web Shooter,0,0,$0.00 
+31-07-21,7,Mary Jane,West,Poor,Potent Potion,35,$10.00 ,$350.00 
+31-08-21,8,Bruce Wayne,South,Average,Bat Signal,40,$15.00 ,$600.00 
+30-09-21,9,Clark Kent,East,Good,Glasses with X-ray Vision,45,$12.22 ,$549.90 
+31-10-21,10,Diana Prince,North,Excellent,Lasso of Truth,50,$14.00 ,$700.00 
+30-11-21,11,Tony Stark,West,Poor,Iron Man Suit,5,$160.00 ,$800.00 
+31-12-21,12,Steve Rogers,South,Average,Captain America Shield,20,$45.00 ,$900.00 
+31-01-22,13,Natasha Romanoff,East,Good,Black Widow's Bite,0,0,$0.00 
+28-02-22,14,Bruce Banner,TBA,Excellent,Gamma Radiation Serum,30,$36.67 ,"$1,100.10 "
+31-03-22,15,Nick Fury,West,Poor,Eye Patch,35,$34.29 ,"$1,200.15 "
+30-04-22,16,Phil Coulson,TBA,Average,Agent ID Card,0,0,$0.00 
+31-05-22,17,Peggy Carter,East,Good,Vintage Pistol,40,$35.00 ,"$1,400.00 "
+30-06-22,18,Howard Stark,North,Excellent,Arc Reactor,45,$33.33 ,"$1,499.85 "
+31-07-22,19,Hank Pym,West,Poor,Ant-Man Suit,50,$32.00 ,"$1,600.00 "
+31-08-22,20,Janet van Dyne,South,Average,Wasp's Wings,55,$30.91 ,"$1,700.05 "
+30-09-22,21,Kurt Busiek,East,Good,Comic Book,60,$30.00 ,"$1,800.00 "
+31-10-22,22,George Perez,North,Excellent,Drawing Pad,0,0,$0.00 
+30-11-22,23,Roger Stern,West,Poor,Notepads,65,$30.77 ,"$2,000.05 "
+31-12-22,24,Tom DeFalco,South,Average,Pen Set,70,$30.00 ,"$2,100.00 "
+31-01-23,25,Loki Laufeyson,Asgard,Mischief,Trickster's Hat,75,$29.33 ,"$2,199.75 "
+28-02-23,26,Thor Odinson,Asgard,Worthy,Mjolnir,80,$28.75 ,"$2,300.00 "
+31-03-23,27,Natasha Romanoff,East,Spy,Spy Kit,0,0,$0.00 
+30-04-23,28,Steve Rogers,South,Leader,Leadership Manual,85,$29.41 ,"$2,499.85 "
+Total,,,,,,965,,"$26,399.80 "
+,,,,,,,,
+,,,,,Summary of Process and Work done,,,
+Regional Analysis,,,,,1. Data Cleaning,,,
+Row Labels,Total Quantity Sold,Total Value Sold,,,"i. After downloading the data, I checked for duplicates and removed all duplicates",,,
+Asgard,155,"$4,499.75 ",,,ii. I checked for spelling errors and trimmed the spaces in the data,,,
+East,190,"$4,400.00 ",,,"iii. I created a table out the remaining values, and searched for blank spaces, renaming it to ""TBA""",,,
+North,105,"$2,399.85 ",,,"iv. Using the find and replace option, I renamed all ""inf"" values to zero (0)",,,
+South,295,"$8,049.90 ",,,,,,
+TBA,30,"$1,100.10 ",,,2. Data Analysis,,,
+West,190,"$5,950.20 ",,,"i. I added a new column to the table and named it ""TOTAL VALUE"" which was done by multiplying Quantity × Price Per Unit",,,
+Grand Total,965,"$26,399.80 ",,,ii. I added a total row to the table to cross check my other calculations,,,
+,,,,,"iii. I created a pivot table named ""REGIONAL ANALYSIS"" and made necessary adjustments ",,,
+,,,,,"iv. Adding ""QUANTITY"" and ""TOTAL VALUE"" as values in column, I calculated the Grand Total and cross checked with my Table 1 to confirm the values",,,
+,,,,,"v. Adding Regions from Table 1 as my row, my summary table was complete, showing the ""TOTAL QUANTITY SOLD"" and ""Total Value"".",,,
+,,,,,,,,
+,,,,,3. Insights from Data,,,
+,,,,,"i. With some data missing, and some regions labelled as ""TBA"", this data set is an approximate value",,,
+,,,,,"ii. It is observed that the most sales came from the South region, over the duration of the data collection",,,
+,,,,,iii. North had the lowest sales despite having more products with EXCELLENT rating(3),,,
+,,,,,"iv. West had the lowest rated goods of all regions, with 6 items labelled poor",,,
+,,,,,v. East has more items labelled good (5),,,
+,,,,,"vi. For this data duration, 965 items were sold with the total value amounting to $26,399.80",,,
